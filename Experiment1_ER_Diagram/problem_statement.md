@@ -8,91 +8,7 @@ Gain hands-on experience in designing ER diagrams that represent database struct
 
 ---
 
-# Scenario A: City Fitness Club Management
-
-**Business Context:**  
-FlexiFit Gym wants a database to manage its members, trainers, and fitness programs.
-
-**Requirements:**  
-- Members register with name, membership type, and start date.  
-- Each member can join multiple programs (Yoga, Zumba, Weight Training).  
-- Trainers assigned to programs; a program may have multiple trainers.  
-- Members may book personal training sessions with trainers.  
-- Attendance recorded for each session.  
-- Payments tracked for memberships and sessions.
-
-### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
-
-### Entities and Attributes
-
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-
-### Relationships and Constraints
-
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
-
-### Assumptions
-- 
-- 
-- 
-
----
-
-# Scenario B: City Library Event & Book Lending System
-
-**Business Context:**  
-The Central Library wants to manage book lending and cultural events.
-
-**Requirements:**  
-- Members borrow books, with loan and return dates tracked.  
-- Each book has title, author, and category.  
-- Library organizes events; members can register.  
-- Each event has one or more speakers/authors.  
-- Rooms are booked for events and study.  
-- Overdue fines apply for late returns.
-
-### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
-
-### Entities and Attributes
-
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-
-### Relationships and Constraints
-
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
-
-### Assumptions
-- 
-- 
-- 
-
----
-
-# Scenario C: Restaurant Table Reservation & Ordering
+# Scenario A: Restaurant Table Reservation & Ordering
 
 **Business Context:**  
 A popular restaurant wants to manage reservations, orders, and billing.
@@ -106,38 +22,99 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+<img width="1400" height="778" alt="image" src="https://github.com/user-attachments/assets/a420c301-200c-45dc-b320-003721c4a10d" />
 
-### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+### 1. Entity List and Attributes
+1. Customer 
 
-### Relationships and Constraints
+• CustomerID (PK)  
+• CustomerName  
+• PhoneNumber  
+• Email  
+2. Reservation 
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+• ReservationID (PK)  
+• ReservationDate  
+• ReservationTime  
+• NumberOfGuests  
+• ReservationType (Advance / Walk-in)  
+3. Table 
 
-### Assumptions
-- 
-- 
-- 
+• TableID (PK)  
+• TableNumber  
+• Capacity  
+• Location  
+4. Waiter 
+
+• WaiterID (PK)  
+• WaiterName  
+• PhoneNumber  
+• ShiftTiming  
+5. Order 
+
+• OrderID (PK)  
+• OrderDate  
+• OrderStatus  
+• TotalAmount  
+6. Dish 
+
+• DishID (PK)  
+• DishName  
+• Price  
+• CategoryID (FK)   
+7. OrderItem 
+
+• OrderItemID (PK)  
+• Quantity  
+• SubTotal  
+• OrderID (FK)  
+8. Bill 
+
+• BillID (PK)  
+• BillDate  
+• FoodCharges  
+• ServiceCharges  
+• TotalBillAmount  
+### 2. Primary Keys (PK) 
+| Entity      |   Primary Key |
+| ----------- | ------------: |
+| Customer    |    CustomerID |
+| Reservation | ReservationID |
+| Table       |       TableID |
+| Waiter      |      WaiterID |
+| Order       |       OrderID |
+| Dish        |        DishID |
+| OrderItem   |   OrderItemID |
+| Bill        |        BillID |
+
+
+
+### 3. Relationship Documentation 
+| Relationship           | Cardinality | Explanation                                            |
+| ---------------------- | ----------: | ------------------------------------------------------ |
+| Customer → Reservation |       1 : N | One customer can make many reservations                |
+| Reservation → Table    |       N : 1 | Many reservations can use one table at different times |
+| Waiter → Reservation   |       1 : N | One waiter serves many reservations                    |
+| Reservation → Order    |       1 : N | One reservation can have multiple orders               |
+| Order → OrderItem      |       1 : N | One order contains many order items                    |
+| Dish → OrderItem       |       1 : N | One dish can appear in many order items                |
+| Reservation → Bill     |       1 : 1 | Each reservation generates one bill                    |
+
+
+### 4. Assumptions 
+
+1. A customer can make multiple reservations.  
+2. Walk-in customers are also recorded as customers in the system.  
+3. Each reservation is assigned to one table.  
+4. One waiter can handle multiple reservations during a shift.  
+5. A reservation may contain multiple food orders.  
+6. Each order can contain multiple dishes through the OrderItem entity.  
+7. Each dish belongs to only one category.  
+8. One bill is generated for each reservation.  
+9. Service charges are included in the final bill amount.
 
 ---
 
-## Instructions for Students
-
-1. Complete **all three scenarios** (A, B, C).  
-2. Identify entities, relationships, and attributes for each.  
-3. Draw ER diagrams using **draw.io / diagrams.net** or hand-drawn & scanned.  
-4. Fill in all tables and assumptions for each scenario.  
-5. Export the completed Markdown (with diagrams) as **a single PDF**
+### Result:
+The given experiment is successfuly completed.
