@@ -79,6 +79,8 @@ END;
 **Output:**  
 The program should display the employee details or an error message.
 
+<img width="588" height="966" alt="image" src="https://github.com/user-attachments/assets/1a994f6f-dca5-482e-9bd4-f8c12ddf34f9" />
+
 ---
 
 ### **Question 2: Parameterized Cursor with Exception Handling**
@@ -97,6 +99,7 @@ The program should display the employee details or an error message.
 
 **Output:**  
 The program should display the employee details within the specified salary range or an error message if no data is found.
+<img width="549" height="968" alt="image" src="https://github.com/user-attachments/assets/02cbe590-aa60-467d-aa24-df117bd4d967" />
 
 ---
 
@@ -116,6 +119,7 @@ The program should display the employee details within the specified salary rang
 
 **Output:**  
 The program should display employee names with their department numbers or the appropriate error message if no data is found.
+<img width="659" height="967" alt="image" src="https://github.com/user-attachments/assets/f9836b14-a354-4276-b162-2998a627eb44" />
 
 ---
 
@@ -135,6 +139,7 @@ The program should display employee names with their department numbers or the a
 
 **Output:**  
 The program should display employee records or the appropriate error message if no data is found.
+<img width="583" height="970" alt="image" src="https://github.com/user-attachments/assets/f2553bae-c387-4f11-aa9c-f9f2233684c9" />
 
 ---
 
@@ -154,6 +159,7 @@ The program should display employee records or the appropriate error message if 
 
 **Output:**  
 The program should update employee salaries and display a message, or it should display an error message if no data is found.
+<img width="485" height="965" alt="image" src="https://github.com/user-attachments/assets/6c510415-9047-47e7-bd4e-04ef71eba2e7" />
 
 ---
 
