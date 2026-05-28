@@ -33,6 +33,11 @@ END;
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 
+<img width="545" height="723" alt="image" src="https://github.com/user-attachments/assets/34300bf1-3dc4-4405-bcdc-8c0af15f1e8c" />
+
+<img width="943" height="170" alt="image" src="https://github.com/user-attachments/assets/0dd6edde-01f4-41ba-a30f-38a3bd7d9202" />
+
+
 ---
 
 ## 2. Write a trigger to prevent deletion of records from a sensitive table.
@@ -42,6 +47,10 @@ END;
 
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
+
+<img width="548" height="526" alt="image" src="https://github.com/user-attachments/assets/76fde6f5-da66-4cc4-85eb-94086822ae21" />
+
+<img width="928" height="170" alt="image" src="https://github.com/user-attachments/assets/e6bf82ce-d6b1-408d-bc69-5994f6c1d84d" />
 
 ---
 
@@ -53,6 +62,10 @@ END;
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 
+<img width="545" height="494" alt="image" src="https://github.com/user-attachments/assets/7fe41104-c547-4a61-a2ee-a4800bd0412c" />
+
+<img width="943" height="240" alt="image" src="https://github.com/user-attachments/assets/f257437f-fbdb-4c36-825f-07720ed2341c" />
+
 ---
 
 ## 4. Write a trigger to keep track of the number of updates made to a table.
@@ -63,6 +76,10 @@ END;
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 
+<img width="543" height="520" alt="image" src="https://github.com/user-attachments/assets/483c29f8-9bae-4725-9b67-edbf63825e5c" />
+
+<img width="857" height="164" alt="image" src="https://github.com/user-attachments/assets/abaaaa80-bfcf-4845-9978-3f16b58d4f5d" />
+
 ---
 
 ## 5. Write a trigger that checks a condition before allowing insertion into a table.
@@ -72,6 +89,10 @@ END;
 
 **Expected Output:**
 - If the inserted salary in the `employees` table is below the condition (e.g., salary < 3000), the insert operation is blocked, and an error message is raised, such as: `ERROR: Salary below minimum threshold.`
+
+<img width="545" height="569" alt="image" src="https://github.com/user-attachments/assets/6a7faf41-fc1a-4b1d-8ded-d06365ba772e" />
+
+<img width="936" height="322" alt="image" src="https://github.com/user-attachments/assets/ef45abca-b3a8-430a-bb04-b1e1468331d2" />
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
