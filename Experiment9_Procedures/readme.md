@@ -60,8 +60,11 @@ Key Differences:
 - Use `DBMS_OUTPUT.PUT_LINE` to display the result.
 - Call the procedure with a number as input.
 
+<img width="490" height="591" alt="image" src="https://github.com/user-attachments/assets/9775f5e4-7713-4d54-91ca-a3cbad7036c8" />
+
 **Expected Output:**  
 Square of 6 is 36
+<img width="947" height="156" alt="image" src="https://github.com/user-attachments/assets/33fb8e28-c163-4cb3-8cc2-ebafc26dc6c0" />
 
 ---
 
@@ -74,8 +77,12 @@ Square of 6 is 36
 - Return the result using the `RETURN` statement.
 - Call the function using a `SELECT` statement or in an anonymous block.
 
+<img width="486" height="595" alt="image" src="https://github.com/user-attachments/assets/bf3b9d09-ed56-438d-9d87-468e82d09533" />
+
 **Expected Output:**  
 Factorial of 5 is 120
+
+<img width="476" height="592" alt="image" src="https://github.com/user-attachments/assets/a9457ab7-d584-4d2f-bd56-d160d933be2e" />
 
 ---
 
@@ -87,8 +94,12 @@ Factorial of 5 is 120
 - Use the `MOD` function to check if the number is divisible by 2.
 - Display whether it is Even or Odd using `DBMS_OUTPUT.PUT_LINE`.
 
+<img width="484" height="560" alt="image" src="https://github.com/user-attachments/assets/701c1a44-670a-477a-9ebd-343591a597e1" />
+
 **Expected Output:**  
 12 is Even
+
+<img width="525" height="167" alt="image" src="https://github.com/user-attachments/assets/ead77769-c082-48b7-8130-9364abbd751a" />
 
 ---
 
@@ -101,8 +112,13 @@ Factorial of 5 is 120
 - Return the reversed number.
 - Call the function and display the output.
 
+<img width="479" height="633" alt="image" src="https://github.com/user-attachments/assets/dc5e037b-1f14-40af-92ed-e80df3a2c157" />
+
+
 **Expected Output:**  
 Reversed number of 1234 is 4321
+
+<img width="481" height="500" alt="image" src="https://github.com/user-attachments/assets/d7da0738-307f-436d-b2cd-83641492851b" />
 
 ---
 
@@ -114,6 +130,8 @@ Reversed number of 1234 is 4321
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
 
+<img width="478" height="579" alt="image" src="https://github.com/user-attachments/assets/c96ccaf0-ee72-49b1-b2a7-502086420db4" />
+
 **Expected Output:**  
 Multiplication table of 5:  
 5 x 1 = 5  
@@ -121,6 +139,8 @@ Multiplication table of 5:
 5 x 3 = 15  
 ...  
 5 x 10 = 50
+
+<img width="440" height="288" alt="image" src="https://github.com/user-attachments/assets/0bdc2ed9-6cd9-43c7-973e-f849658a5b59" />
 
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
